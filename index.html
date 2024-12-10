@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coming Soon | Spring 2025</title>
     <style>
+      /* Body styling with black background */
       body {
         background-color: #000; /* Black background */
         color: #C0C0C0; /* Silver font color */
-        font-family: Inter, sans-serif; /* Clean font */
+        font-family: 'Arial', sans-serif; /* Clean font */
         text-align: center;
         margin: 0;
         padding: 0;
@@ -19,25 +20,45 @@
         height: 100vh; /* Full viewport height */
       }
 
+      /* Main title (Coming Soon) styling */
       h1 {
-        font-size: 4em; /* Large "Coming Soon" text */
-        margin: 0;
+        font-size: 6em; /* Large "Coming Soon" text */
         font-weight: bold;
-        -webkit-text-stroke: 1px #000; /* Adds crisp black outline */
-        text-stroke: 1px #000; /* Adds crisp black outline */
+        color: #C0C0C0; /* Silver color */
+        text-transform: uppercase;
+        margin: 0;
+        -webkit-text-stroke: 1px #C0C0C0; /* Adds silver outline */
+        text-stroke: 1px #C0C0C0; /* Adds silver outline */
+        text-shadow: 0 0 10px #C0C0C0, 0 0 20px #C0C0C0; /* Glow effect */
       }
 
+      /* Subheading ("Spring 2025") styling */
       h2 {
-        font-size: 1.5em; /* Smaller "Spring 2025" text */
+        font-size: 2.5em; /* Smaller "Spring 2025" text */
         font-weight: normal;
+        color: #C0C0C0; /* Silver color */
+        text-transform: uppercase;
         margin-top: 20px;
-        -webkit-text-stroke: 1px #000; /* Adds crisp black outline */
-        text-stroke: 1px #000; /* Adds crisp black outline */
+        -webkit-text-stroke: 1px #C0C0C0; /* Adds silver outline */
+        text-stroke: 1px #C0C0C0; /* Adds silver outline */
+        text-shadow: 0 0 5px #C0C0C0, 0 0 10px #C0C0C0; /* Glow effect */
       }
 
-      /* Optional: Add a subtle glow effect on the text */
+      /* Centered container for all content */
+      div {
+        text-align: center;
+      }
+
+      /* Optional: Add a subtle animation to the glow effect */
+      @keyframes glowing {
+        0% { text-shadow: 0 0 5px #C0C0C0, 0 0 10px #C0C0C0, 0 0 20px #C0C0C0, 0 0 30px #C0C0C0; }
+        50% { text-shadow: 0 0 10px #C0C0C0, 0 0 20px #C0C0C0, 0 0 30px #C0C0C0, 0 0 40px #C0C0C0; }
+        100% { text-shadow: 0 0 5px #C0C0C0, 0 0 10px #C0C0C0, 0 0 20px #C0C0C0, 0 0 30px #C0C0C0; }
+      }
+
+      /* Apply animation to the text */
       h1, h2 {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff0000;
+        animation: glowing 1.5s infinite alternate;
       }
     </style>
   </head>
